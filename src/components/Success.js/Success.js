@@ -17,7 +17,7 @@ const Success = ({trackingCode}) => {
           <p className="">submit track number to cashier for payment and retrieval of goods </p>
           <Link className="font-semibold " to="/TrackingPage">track your Order - {trackingCode} </Link>
 
-          <Link to="/" className="flex bg-[#FF6F61] w-[200px] h-[40px] py-[16px] px-[8px] rounded-[8px] justify-center items-center gap-[4px] self-stretch border-[#FF6F61] ">
+          <Link to="/Home" className="flex bg-[#FF6F61] w-[200px] h-[40px] py-[16px] px-[8px] rounded-[8px] justify-center items-center gap-[4px] self-stretch border-[#FF6F61] ">
               <p className="text-[#634c4a] text-[16px] font-normal leading-[24px] ">Continue Shopping</p>
           </Link>
        </div>

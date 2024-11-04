@@ -31,7 +31,7 @@ const NavbarSecond = ({search,query,result,setQuery,loginCon,setLoginCon,cartQua
                 <span className="w-[50px] h-[10px] bg-[black] rounded-[8px]  "></span>
                 <span className="w-[50px] h-[10px] bg-[black] rounded-[8px]  "></span>
         </div>
-        <nav className="md:flex p-[8px] gap-[16px] aligns-center hidden absolute bg-[#FF6F61] top-[100px] right-0 sm:static justify-content  " >
+        <nav className="md:flex p-[8px] gap-[16px] aligns-center hidden absolute bg-[#FFF] top-[50px] right-0 sm:static justify-content  " >
             <Link className="nav hover:bg-[#FFD8D4] hover:text-[#FFF] " to="/Home">Home</Link>
             <Link className="nav hover:bg-[#FFD8D4] hover:text-[#FFF] " to="/TrackingPage">Track Order</Link>
         <Link className="nav hover:bg-[#FFD8D4] hover:text-[#FFF] " to="/AboutPage">About</Link>

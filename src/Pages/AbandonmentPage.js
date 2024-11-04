@@ -1,9 +1,9 @@
 import Abandonment from '../components/Abandonment'
 
-const AbandonmentPage = ({setCart}) => {
+const AbandonmentPage = ({setCart,cart}) => {
     return ( 
         <div className="">
-            <Abandonment setCart={setCart} />
+            <Abandonment cart={cart} setCart={setCart} />
         </div>
      );
 }

@@ -15,7 +15,7 @@ const PhysicalPayment = () => {
        <div className="flex flex-col gap-[20px] items-center justify-center  "> 
         <p className="font-semibold">Order Confirmed</p>
   
-          <Link to="/" className="flex bg-[#FF6F61] w-[200px] h-[40px] py-[16px] px-[8px] rounded-[8px] justify-center items-center gap-[4px] self-stretch border-[#FF6F61]  ">
+          <Link to="/Home" className="flex bg-[#FF6F61] w-[200px] h-[40px] py-[16px] px-[8px] rounded-[8px] justify-center items-center gap-[4px] self-stretch border-[#FF6F61]  ">
               <p className="text-[#634c4a] text-[16px] font-normal leading-[24px] ">Continue Shopping</p>
           </Link>
        </div>

@@ -18,7 +18,7 @@ const Checkout = ({getTrackingCode}) => {
                             <label htmlFor="name" className="text-[#333] font-normal text-[18px] leading-[20px]">Name</label>
                             <input required id="name" type="text" className="w-full h-[50px] p-[10px] border-none focus:outline-none " />
                     </div>
-                    <div className="flex py-[8px] px-[0px] self-stretch items-center ">
+                    <div className="flex py-[8px] px-[0px] self-stretch border items-center ">
                         <label htmlFor="address" className="text-[#333] font-normal text-[18px] leading-[20px]">Address</label>
                         <input required id="address" type="text"  className="w-full h-[50px] p-[10px] border-none focus:outline-none "/>
                     </div>
@@ -63,7 +63,7 @@ const Checkout = ({getTrackingCode}) => {
                         
                 </div>
             </form>
-            <div className="flex max-w-[700px] flex-col items-start gap-[36px]">
+            <div className="flex max-w-[700px] min-w-[300px] flex-col items-start gap-[36px]">
                 <Link to="/TrackingPage" className="flex bg-[#F8F8F8] h-[90px] py-[16px] px-[8px] rounded-[8px] justify-center items-center gap-[4px] self-stretch border-[#FF6F61] ">
                         <p className="text-[#FF6F61] text-[16px] font-normal leading-[24px] ">Review Order</p>
                 </Link>
