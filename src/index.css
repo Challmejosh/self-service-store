@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.log{
+  @apply w-full border rounded-[10px] bg-transparent mt-8 p-2 ;
+}
+.log::placeholder{
+  @apply pl-3 text-[#333] ;
+}
+.svg{
+  @apply w-[32px] h-[32px];
+}
+.hero{
+  background-image: url('../public/assets/Hero\ section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 424px;
+}
+.numb{
+background-color: #FF6F61;
+}
+.nav{
+  @apply flex p-[4px] justify-center items-center gap-[4px];
+}
+.one{
+  background-image: url(../public/assets/firstC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 138px;
+  flex-shrink: 0;
+}
+.two{
+  background-image: url(../public/assets/secondC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 138px;
+  flex-shrink: 0;
+}
+.three{
+  background-image: url(../public/assets/thirdC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 138px;
+  flex-shrink: 0;
+}
+.cate{
+  @apply flex justify-center items-center gap-[4px] text-[16px] font-normal leading-normal;
+}
+
+@media (min-width: 640px) {
+  .one{
+    background-image: url(../public/assets/firstC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 276px;
+    flex-shrink: 0;
+  }
+  .two{
+    background-image: url(../public/assets/secondC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 276px;
+    flex-shrink: 0;
+  }
+  .three{
+    background-image: url(../public/assets/thirdC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 276px;
+    flex-shrink: 0;
+  }
+
+}
+.loader{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite;
+}
+.loader::before,.loader::after{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite;
+}
+.loader::after{
+  transform: rotate3d(90,90,0,180deg);
+  border-color: #FF3D00;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+@keyframes prixClipFix{
+  0%{
+    clip-path: polygon(50% 50% , 0 0,0 0,0 0,0 0,0 0)
+  }
+  50%{
+    clip-path: polygon(50% 50% , 0 0,100% 0,100% 0,100% 0,100% 0)
+
+  }
+  75%,100%{
+    clip-path: polygon(50% 50% , 0 0,100% 0,100% 100%,100% 100%,100% 100%)
+  }
+}
