@@ -187,7 +187,7 @@ function App() {
         const startTimer = () => {
             timer = setTimeout(() => {
                 getAbandon();
-            }, 1 * 60 * 1000); // 30 minutes
+            }, 10 * 60 * 1000); // 30 minutes
         };
 
         startTimer();
@@ -202,7 +202,7 @@ function App() {
     <div className="App">
       <ToastContainer />
      <Navbar setQuery={setQuery} setLoginCon={setLoginCon} cartQuantity={cartQuantity} loginCon={loginCon} search={search} query={query} result={result} />
-          <button onClick={()=>logout()}>log out</button>
+          
         <Routes>
             <Route path='/' exact element={<FirstPage loginCon={loginCon} />} />
 

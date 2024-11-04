@@ -66,7 +66,7 @@ const Cart = ({cart,total,handleRemCart,handleCart,handleCheckboxChange,onlinePa
         }
         
     return ( 
-        <div className=" bg-[#fff] flex flex-col items-center justify-center ">
+        <div className=" bg-[#fff] flex flex-col items-center justify-center relative ">
             
         {orderDone ? (
             <>
@@ -75,7 +75,7 @@ const Cart = ({cart,total,handleRemCart,handleCart,handleCheckboxChange,onlinePa
 
             <div className="flex max-w-[1000px] py-[16px] px-[8px] flex-col items-center gap-[74px] ">
 
-            <Link to="/AbandonmentPage" className="flex fixed top-[50%] right-[50%] border border-[#FF6F61] rounded-[50%]  " >unattended cart</Link>
+            <Link to="/AbandonmentPage" className="flex absolute p-3 top-1 left-1 border border-[#FF6F61] rounded-[50%]  " >unattended cart</Link>
                 
     <div className="cardDetail flex flex-col items-center gap-[20px] self-stretch ">
         <div className="card flex flex-col items-start gap-[12px] self-stretch  ">

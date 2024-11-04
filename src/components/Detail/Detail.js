@@ -70,7 +70,7 @@ const Detail = ({selected,pending,handleCart}) => {
 </div>
                 </div>
             ):(
-                <div className="flex h-screen w-full">
+                <div className="flex h-screen w-full items-center justify-center">
                      <div className=" h-screen">
                         <div className="loader"></div>
                     </div>

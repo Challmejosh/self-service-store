@@ -15,10 +15,15 @@ const Abandonment = ({ setCart }) => {
             console.log(allDoc)
             console.log(mainDoc)
         })*/
-       const data = fetch.data()
-       console.log(data)
-       setMainDoc(data.cartHistory)
-       console.log(mainDoc)
+       if(fetch.exists()){
+        const data = fetch.data()
+        console.log(data)
+        setMainDoc(data.cartHistory)
+        console.log(mainDoc)
+       }else{
+        alert("No item")
+       }
+       
         }catch{
             alert("Connection lost")
         }
