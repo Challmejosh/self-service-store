@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAikq_fw06PkUUhbGK8nbxZ0OPlZ85KvyQ",
+  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
   authDomain: "play-62bbc.firebaseapp.com",
   projectId: "play-62bbc",
   storageBucket: "play-62bbc.appspot.com",
