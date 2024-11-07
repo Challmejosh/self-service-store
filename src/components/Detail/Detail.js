@@ -65,7 +65,7 @@ const Detail = ({selected,pending,handleCart}) => {
     
 </div>
 
-<div onClick={handleCart} className="flex w-[147px] h-[40px] py-[16px] px-[8px] justify-center items-center gap-[4px] flex-shrink-0 bg-[#FF6F61] rounded-[8px] cursor-pointer " >
+<div onClick={()=>handleCart(selected)} className="flex w-[147px] h-[40px] py-[16px] px-[8px] justify-center items-center gap-[4px] flex-shrink-0 bg-[#FF6F61] rounded-[8px] cursor-pointer " >
     <p className="text-[#F8F8F8] text-[16px] font-normal  leading-[24px] ">Add to Cart</p>
 </div>
                 </div>

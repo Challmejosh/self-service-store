@@ -225,7 +225,7 @@ function App() {
               <Route path='/CartHistoryPage' element={<CartHistoryPage pending={pending} />} />
               <Route path='/AbandonmentPage' element={<AbandonmentPage setCart={setCart} cart={cart} />} />
                <Route path="/Profile" element={<Profile />} />
-          
+              
           
         </Routes>
         <Footer />
