@@ -58,7 +58,6 @@ const Cart = ({cart,total,handleRemCart,handleCart,handleCheckboxChange,onlinePa
                   }*/
                  setOrderDone(!orderDone)
                   getTrackingCode()
-                  alert(getTrackingCode)
                   getCartHistory()
                   await setCart([])
                }
