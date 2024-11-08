@@ -26,7 +26,7 @@ const Login = (userAuthLog) => {
       }
    }
     return ( 
-        <div className="bg-[orange] w-[300px] p-3 rounded-[30px] h-[500px] mt-[35px] flex items-center justify-center">
+        <div className="bg-[#FFF] items-center justify-center flex w-[300px] p-3 rounded-[30px] h-[500px] mt-[35px] flex items-center justify-center">
               
            <form onSubmit={onSubmitHandler} className="flex items-center justify-center flex-col w-full p-3 h-full rounded-[30px]">
            <h2>{currstate}</h2>
